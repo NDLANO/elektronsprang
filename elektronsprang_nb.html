@@ -124,6 +124,19 @@ function playSound(id, loop) {
     // Bokmål teskt: Skyt foton med bølgelengde
    var tooltipText = "Skyt foton med bølgelengde";
 </script>
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://tall.ndla.no/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '10']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
 </head>
 <body onload="init();" style="margin:0px;background: white">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:800px; height:450px">
@@ -132,15 +145,15 @@ function playSound(id, loop) {
 		</div>
 	</div>
 <div id="canvas_text_fotokanon">
-Fotonkanon
+fotonkanon
 </div>
 <div id="canvas_text_hydrogen">
-Hydrogenatom
+hydrogenatom
 </div>
 <div  id="animation_controls">
 			   <!-- Nynorsk tekst: Velg elektronskal, og skyt ut foton: 
                     Bokmål tekst : Velg elektronskall, og skyt ut foton: -->
-				<p class="instructionText"><span class="line">Velg elektronskall, og skyt ut foton:</span>
+				<p class="instructionText"><span class="line">Velg elektronskall og skyt ut foton:</span>
                 <span class="line">
 				<label>
                      <!-- Nynorsk tekst: 1. skal:      Bokmål tekst :  1. skall -->
